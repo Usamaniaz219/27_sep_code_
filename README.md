@@ -26,7 +26,8 @@ Place your images in an input directory.
 ### 2. Run the Segmentation
 
 ```sh
-python process_images.py <input_directory> <output_directory>
+python Meanshift_zoning_segmenter.py images/ output/
+
 ```
 
 ### 3. Output Structure
