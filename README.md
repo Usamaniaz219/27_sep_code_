@@ -97,7 +97,8 @@ Place your images in an input directory.
 ### 2. Run the Segmentation
 
 ```sh
-python process_images.py <input_directory> <output_directory>
+python Meanshift_zoning_segmenter.py images/ output/
+
 ```
 
 ### 3. Output Structure
@@ -128,12 +129,4 @@ output_directory/
 
 Processing details are saved in `im_process3.log` for debugging and performance tracking.
 
-## Example
 
-```sh
-python process_images.py images/ output/
-```
-
-This will process all images in the `images/` directory and store results in `output/`.
-
-##
