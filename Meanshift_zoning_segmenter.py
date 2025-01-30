@@ -1,4 +1,4 @@
-
+import sys
 import os
 import cv2
 import numpy as np
@@ -70,6 +70,16 @@ def process_images(input_dir, output_dir):
         if filename.lower().endswith(('.jpg', '.jpeg', '.png')):  # Check if the file is an image
             image_path = os.path.join(input_dir, filename)
             process_image(image_path, output_dir)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python Meanshift_zoning_segmenter.py <input_directory> <output_directory>")
+        sys.exit(1)
+
+    input_dir = sys.argv[1]
+    output_dir = sys.argv[2]
+
+    process_images(input_dir, output_dir)
 
 
 
