@@ -71,11 +71,7 @@ def process_images(input_dir, output_dir):
             image_path = os.path.join(input_dir, filename)
             process_image(image_path, output_dir)
 
-# Directories
-input_directory = "/media/usama/SSD/Usama_dev_ssd/Zoning_segmentation_code/data_for_clustering_1/"
-output_directory = "/media/usama/SSD/Usama_dev_ssd/Zoning_segmentation_code/26_sep_2024_meanshift_res_bandwidth_15_and_25/"
 
-process_images(input_directory, output_directory)  # Call the process_images function
 
 
 
